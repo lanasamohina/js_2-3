@@ -1,0 +1,84 @@
+table{
+    border-collapse: collapse;
+    margin: 50px;
+}
+
+tr:first-child, td:first-child{
+    font-weight: 800;
+}
+
+td:first-child{
+    border-right: 1px solid #000000;
+}
+
+tr:first-child{
+    border-bottom: 1px solid #000000;
+}
+
+td, tr{
+    padding: 10px;
+}
+
+.menu-btn,  .menu__close{
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /*display: none;*/
+}
+
+.menu__close{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 10px;
+    right: 220px;
+    display: none;
+}
+
+.nav{
+    will-change: transform;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 230px;
+    background: blue;
+    transform: translateX(100%);
+    transition: transform ease-in-out .3s;
+}
+.shownav .nav{
+    transform: translateX(0%);
+}
+.shownav .menu__close{
+    display: block;
+}
+.shownav .menu-btn{
+    display: none;
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.nav__link {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+    display: block;
+    padding: 30px 20px;
+}
+
+

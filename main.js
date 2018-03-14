@@ -19,7 +19,7 @@
         document.body.classList.add("shownav");
     }
 
-    let menuClose = document.getElementsByClassName('menu__close')[0];
+    let menuClose = document.getElementsByClassName('overlay')[0];
     menuClose.onclick = function () {
         document.body.classList.remove("shownav");
     }
